@@ -37,9 +37,9 @@ const routes = [
         {name:'Mine',path:'mine',component:Mine}
     ]},
 
-     {name:'App',path:'',component:App},
+        {name:'Movie',path:'/',component:Movie},
 
-    {name:'Detail',path:'/detail',component:Detail}
+        {name:'Detail',path:'/detail',component:Detail}
     
 ]
 

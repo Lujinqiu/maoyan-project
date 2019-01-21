@@ -12,22 +12,27 @@
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-        list:[
-            {name:'正在热播'},
-            {name:'即将上映'}
-        ],
-        active:'正在热播'
-    };
-  },
-  methods: {
-    isactive(name){
-        this.active = name;
+    export default {
+        data() {
+            return {
+                list:[
+                    {name:'正在热播'},
+                    {name:'即将上映'}
+                ],
+                active:'正在热播'
+            };
+        },
+        methods: {
+            isactive(name){
+                this.active = name;
+            
+            }
+        },
+        //生命周期函数，请求数据
+        created(){
+            axios.get()
+        }
     }
-  }
-};
 </script>
 <style scoped>
 .topbar-bg {
