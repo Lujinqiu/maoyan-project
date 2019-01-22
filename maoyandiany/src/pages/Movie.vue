@@ -2,6 +2,7 @@
     <div id='app'>
         <Xheader></Xheader>
         <Xsearch></Xsearch>
+        <Xpanel></Xpanel>
         <Xfooter></Xfooter>
     </div>
 </template>
@@ -9,6 +10,7 @@
     import Xheader from '../components/Xheader.vue';
     import Xsearch from '../components/Xsearch.vue';
     import Xfooter from '../components/Xfooter.vue';
+    import Xpanel from '../components/Xpanel.vue';
 
 
 
@@ -17,7 +19,8 @@
         components:{
             Xheader,
             Xsearch,
-            Xfooter
+            Xfooter,
+            Xpanel
         }
         
     }

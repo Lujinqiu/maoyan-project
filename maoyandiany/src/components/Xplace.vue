@@ -1,16 +1,16 @@
 <template>
     <div class="list-wrap" style="margin-top:0px;min-height:627px;margin-bottom: 55px;">
-        <div class="item mb-line-b" data-id="25545" data-bid="dp_wx_home_cinema_list">
+        <div v-for="(it,idx) in movieList" class="item mb-line-b" :data-id="it.id" data-bid="dp_wx_home_cinema_list" style="margin-bottom:20px;">
             <div class="title-block box-flex middle">
                 <div class="title line-ellipsis">
-                    <span>龙洞巨幕影城</span>
+                    <span>{{it.nm}}</span>
                     <span class="price-block">
-                        <span class="price">29.9</span><span class="q">元起</span>
+                        <span class="price">{{it.sellPrice}}</span><span class="q">元起</span>
                     </span>
                 </div>
                 <div class="location-block box-flex">
-                    <div class="flex line-ellipsis">天河区迎龙路163号弘马众创城1楼（九龙城旁，橙子酒店对面）</div>
-                    <div class="distance">3.6km</div>
+                    <div class="flex line-ellipsis">{{it.addr}}</div>
+                    <div class="distance">{{it.distance}}</div>
                 </div>
                 <div class="flex"></div>
                 
@@ -42,7 +42,25 @@
     import '../styles/place.css'
 
     export default {
-
+        data(){
+            return {
+                movieList:[]
+            }
+        },
+        //请求数据
+        created(){
+            let xhr = new XMLHttpRequest();
+                xhr.onload = ()=>{
+                    if(xhr.status===200){
+                        let res = JSON.parse(xhr.responseText);
+                        console.log(res)
+                        res=res.cinemas
+                        this.movieList=res
+                    }
+                }
+            xhr.open('get','http://localhost:4008/miao/ajax/cinemaList?day=2019-01-22&offset=0&limit=20&districtId=-1&lineId=-1&hallType=-1&brandId=-1&serviceId=-1&areaId=-1&stationId=-1&item=&updateShowDay=true&reqId=1548155918452&cityId=20',true);
+            xhr.send();
+        }
     }
 
 
@@ -80,6 +98,7 @@ body,html{width: 100%;height: 100%;background: #fff;}
 .list-wrap .price-block {
     padding-top: 9px;
     padding-left: 3px;
+
 }
 .list-wrap .price-block .price {
     font-size: 18px;
@@ -138,5 +157,20 @@ body,html{width: 100%;height: 100%;background: #fff;}
 .discount-block {
     color: #999;
     margin-bottom: 4px;
+}
+.discount-block .discount-label {
+    width: 15px;
+    height: 14px;
+    position: relative;
+    top: 3px;
+    display: inline-flex;
+}
+.discount-block .discount-label-text {
+    margin-left: 0;
+    font-size: 11px;
+    display:inline-block;
+}
+.title-block {
+    line-height: 1.5;
 }
 </style>

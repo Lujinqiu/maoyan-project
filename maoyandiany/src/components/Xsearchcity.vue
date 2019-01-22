@@ -21,12 +21,26 @@
 </template>
 <script type="text/javascript">
     export default {
+        data(){
+            return {
+                
+            }
+        },
         methods:{
             goto(){
                 this.$router.push({name:'Detail'})
             }
             
+        },
+        //生命周期函数，请求数据
+        created(){
+            this.$axios.get('http://localhost:3008/?id=1').then(res=>{
+                let data=res.data.movieList
+                this.movieList+=data
+                console.log(data)
+            })
         }
+
     }
 
 

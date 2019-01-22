@@ -12,15 +12,7 @@
                 movieList:[]
             }
         },
-        //生命周期函数，请求数据
-        created(){
-            this.$axios.get('http://localhost:3008/').then(res=>{
-                let data=res.data.movieList
-                this.movieList+=data
-                console.log(data)
-            })
-        }
-    
+        
 
     }
 </script>
