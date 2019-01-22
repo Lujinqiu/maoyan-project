@@ -30,7 +30,7 @@
         },
         //生命周期函数，请求数据
         created(){
-            axios.get()
+            // axios.get()
         }
     }
 </script>
