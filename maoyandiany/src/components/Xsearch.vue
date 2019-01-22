@@ -1,17 +1,17 @@
 <template>
-  <div class="white-bg topbar-bg ">
-    <div class="city-entry">
-      <span class="city-name">广州</span><i class="city-entry-arrow"></i>
-    </div>
-    
-    <div class="switch-hot" data-active=".n-hot">
-      <div class="hot-item " data-tab=".n-hot" v-for="item in list" :key="item.name"
-       @click="isactive(item.name)"  :class="{active : active == item.name}" >{{item.name}}</div>
-    </div>
-    <div class="search-entry search-icon" data-type="movie"></div>
-  </div>
+      <div class="white-bg topbar-bg ">
+        <div class="city-entry">
+          <span class="city-name">广州</span><i class="city-entry-arrow"></i>
+        </div>
+        <div class="switch-hot" data-active=".n-hot">
+          <div class="hot-item " data-tab=".n-hot" v-for="item in list" :key="item.name"
+           @click="isactive(item.name)"  :class="{active : active == item.name}" >{{item.name}}</div>
+        </div>
+        <div class="search-entry search-icon" data-type="movie"></div>
+      </div>
 </template>
 <script>
+
     export default {
         data() {
             return {
@@ -20,6 +20,7 @@
                     {name:'即将上映'}
                 ],
                 active:'正在热播'
+                
             };
         },
         methods: {
@@ -27,11 +28,8 @@
                 this.active = name;
             
             }
-        },
-        //生命周期函数，请求数据
-        created(){
-            // axios.get()
         }
+        
     }
 </script>
 <style scoped>
