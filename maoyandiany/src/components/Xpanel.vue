@@ -94,7 +94,7 @@ export default {
     // 获取数据的方法
     
     async getNews() {
-      var data = await this.$axios.get('http://10.3.143.74:4008/movie/ajax/movieOnInfoList?token=')
+      var data = await this.$axios.get('http://localhost:4008/movie/ajax/movieOnInfoList?token=')
         console.log(data)
         this.news=data.data.movieList
     } 
