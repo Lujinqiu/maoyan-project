@@ -44,8 +44,17 @@
 </script>
 <style scoped>
 .topbar-bg {
+<<<<<<< HEAD
     
     /* display: flex; */
+=======
+    position:fixed;
+    margin-top:50.5px;
+    z-index: 100;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+>>>>>>> 5e103b5da802bb2d08a0cf8577fc245a2437c05d
     -webkit-box-align: center;
     align-items: center;
     height: 44px;

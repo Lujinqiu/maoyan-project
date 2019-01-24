@@ -3,6 +3,7 @@ import Vue from 'vue'
 // Vue.use(Vuex)
 import './styles/app.css'
 import 'weui'
+// import '../font/iconfont.css';
 //引入axios挂载到Vue原型上
 import axios from 'axios'
 import $ from 'jquery'
@@ -26,6 +27,7 @@ import App from './App.vue'
 // import CityList from './components/CityList.vue';
 //详情页的路由
 import Detail from './components/Detail.vue'
+import Xlongdong from './components/Xlongdong.vue'
 
 
 
@@ -33,6 +35,7 @@ import Detail from './components/Detail.vue'
 import Movie from './pages/Movie.vue';
 import Cinema from './pages/Cinema.vue';
 import Mine from './pages/Mine.vue';
+
 
 
 const routes = [
@@ -45,10 +48,11 @@ const routes = [
         ]
     },
 
-    { name: 'Movie', path: '/', component: Movie },
+    {name:'Movie',path:'/',component:Movie},
+    {name:'Detail',path:'/detail',component:Detail},
+    {name:'Xlongdong',path:'/longdong',component:Xlongdong}
 
-    { name: 'Detail', path: '/detail', component: Detail }
-
+    
 ]
 
 const router = new VueRouter({

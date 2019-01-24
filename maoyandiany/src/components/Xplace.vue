@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="list-wrap" style="margin-top:0px;min-height:627px;margin-bottom: 55px;">
     <div
       v-for="(it,idx) in movieList"
@@ -15,6 +16,41 @@
             <span class="price">{{it.sellPrice}}</span>
             <span class="q">元起</span>
           </span>
+=======
+    <router-link to="/longdong" tag="div" class="list-wrap" id="place" style="margin-top:0px;min-height:627px;margin-bottom: 55px;">
+        <div v-for="(it,idx) in movieList" class="item mb-line-b" :data-id="it.id" data-bid="dp_wx_home_cinema_list" style="margin-bottom:20px;">
+            <div class="title-block box-flex middle">
+                <div class="title line-ellipsis">
+                    <span>{{it.nm}}</span>
+                    <span class="price-block">
+                        <span class="price">{{it.sellPrice}}</span><span class="q">元起</span>
+                    </span>
+                </div>
+                <div class="location-block box-flex">
+                    <div class="flex line-ellipsis">{{it.addr}}</div>
+                    <div class="distance">{{it.distance}}</div>
+                </div>
+                <div class="flex"></div>
+                
+                <div class="label-block">
+                            <div class="endorse">改签</div>
+                            <div class="snack">小吃</div>
+                            <div class="vipTag">折扣卡</div>
+                </div>
+                <div class="discount-block">
+                <div>
+                    <div class="discount-label normal platform">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAAAXNSR0IArs4c6QAAA0VJREFUSA3FV1tIVFEUXXccNc3RSsgMX6EooehHQZSZFWSaBPURSR9hQUSR/UT+9BEU/UgfQS8qehIUQgV99KKPLIugLIyMiuxFNEo+Ksu3Tmt75jLece7xkjhuOHPOfpy91z1n733nGiD5ziAFPtRwWcx5rsgmjQx8p+86GKg2tuGb4Q/eyMCzJi1oKMcGOgiiwD3y5OEOLoBUzBoXF8tDAQyLjLFdDJQclmChgyQLgP+nlBJAxgTIrd0bMQ0wNBjz96rtLfX2bnzDwFCvrd7wnWIW2FHFByA+007rTP67GbiaZWurP4G764CIaNvNKDyqdI+r7G2G+ux11OgBdL6mRSzb07nQTjzzlLzAfxXBVnVbgcHuYKmF1wMQU1ckkLkReHceaH9l2YzEAsW3Pg2S5wM5W4BH263yENz4AMxNXV+AjiAA/V1KGyyPSjB3jTs7B5DBfEhabHUYb15BtVUek2TlNZxzAC8OAJ9vWF2V3VH87VKrPGM9UHLdKrPhnANYeRkYHrC6cU9XfOVPq1zyxiGND0Du2a6Oi5mYQnVMOJOkea25BzTXAmaOmLoQsx5AQg6QvlZVgjyVi+YyG/7Zk67WCw+yXGPYMzikbKX75VQC3Xz1P9sXImxApAcQPQPI3sxaZisdZkORpiJtVWp7sAf4ekutB/4AMgY5+n8BfbwSAbviktK/PBSIGLTSt2IxdscBiazrH88BTwaQtQloPKwcF50EWp8A7y9a3ebuAjqbFKiuT0Bvm1U/itO8afxWebuB1TfV0SdkAwv2A1EeKnnM7Y3AsrNsVBWjXHI5exGw6po6CU1w2aQHEMlA+XuApuN84r/WIMK9OQE0EFDRaSA2ma9mlmPhMXbAHbz/FqCUwM1KGbt7RKIHkFtFB8zqJv9Lx3QSGW+uALnf2vkM6AXmLAVSy1Qu3N8AxKUBS44EbEOs9EmYyid6yyM2j1HuVaicZeZ9qNbmr5yW/Dn5yPITEtv6ncDMPDIGh0+kY0ifhK4odYT9nYGNkoRp5arkAlL6HwLaGvjSugD08Pgdkh6AQycTMdPnwEQ8O9wrAJg9U0ZeF/PjwZSFZ+wp/zRzGfxAlG80jis8iXBch3ckFmNK7H9lNNyRgjo67AAAAABJRU5ErkJggg==" alt="">
+                    </div>
+                    <div class="discount-label-text">飞驰人生等2部影片特惠</div>
+                </div>
+                <div>
+                    <div class="discount-label normal card">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAAAXNSR0IArs4c6QAAAgFJREFUSA3Nlz1LA0EQhmf3kouFEQwi+FEYQ+xEsImFoCDoL/CLaKd/QbC0sbCzFVuxsRS1jEVAsUqrIILRQAhaBGKMuawzwpGAm83mNhddCHfZnd3n3Z2ZuxsG2JI3YtQpVw6AiTkhYJj6/GqMwSsIdm312DsnMyzLCF79rGRAiIhfUOm6jL0FQvZU4Gfn0GU4KcINE5vjsc9LFXajE9kcfT7UDZaMQWwuG9Dpi/YyiIWZjqnSxrOAtWgANsYDysV1Bj0L0Flcx8ZoC1F0wf50UMo5fqjCY1FIxxo7jQSUHWgK+ag2YprfGwnIlQTQTk3a/46B2UEOIUu+v0gIIMgZLLTIZHJTOl+TL4K9ShckMc36Q+pc356QB6FLLJQFCqi4f39d2WoKLTy03ckg2OjAvcyXh9n1KX8eA0YC4n0MtuLoJru+o3bvjAS8o2vpfXCYsGEzZkFYHQ5SbcoglM5o6KQAoxhIDHBYiVqYERZcZB04f3aghNGv04wEuIDbQg3u8Lc4YsHymAVLeD17cuDypbWKjgggIZTpVwhM5x1YxzdlpaaXXB0T4J5GEbPy6F7/8WwUhC7U5OpZgIPfU5qnrNTn+UmoXLWNQc8n0AZDacqxUskpLXwcJDbHMinlI0O9NLI51WiAZZLa0odRZBKbU4FINRoDdtoNdxCDWMQk9jePWpE8hVOLbwAAAABJRU5ErkJggg==" alt="">     
+                    </div>
+                    <div class="discount-label-text">开卡特惠，首单2张立减3元</div>
+                </div>
+>>>>>>> 5e103b5da802bb2d08a0cf8577fc245a2437c05d
         </div>
         <div class="location-block box-flex">
           <div class="flex line-ellipsis">{{it.addr}}</div>
@@ -35,6 +71,7 @@
                 alt
               >
             </div>
+<<<<<<< HEAD
             <div class="discount-label-text">飞驰人生等2部影片特惠</div>
           </div>
           <div>
@@ -50,6 +87,10 @@
       </div>
     </div>
   </div>
+=======
+        </div> 
+    </router-link>
+>>>>>>> 5e103b5da802bb2d08a0cf8577fc245a2437c05d
 </template> 
 <script type="text/javascript">
 import "../styles/all.css";
@@ -83,6 +124,7 @@ export default {
 </script> 
 
 <style scoped>
+<<<<<<< HEAD
 body,
 html {
   width: 100%;
@@ -95,6 +137,16 @@ html {
   background-color: #fff;
   position: relative;
   overflow: hidden;
+=======
+#place{padding-top: 150px;}
+body,html{width: 100%;height: 100%;background: #fff;}
+ .list-wrap{
+    padding: 13px 15px 13px 0;
+    margin-left: 15px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+>>>>>>> 5e103b5da802bb2d08a0cf8577fc245a2437c05d
 }
 .list-wrap .title-block {
   display: block;
