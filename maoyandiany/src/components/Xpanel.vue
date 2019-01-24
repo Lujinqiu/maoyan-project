@@ -48,19 +48,6 @@
         </div>
         <div class="more"></div>
       </div>
-      <!-- <div class="page f-hot" data-hot=".f-hot" data-cid="c_3j5p10oz">
-        <div class="list-wrap" style="margin-top: 0px;">
-          <div class="most-expected">
-            <div class="weui-loadmore">
-            <i class="weui-loading"></i>
-            <span class="weui-loadmore__tips">正在加载</span>
-        </div>
-            <div class="most-expected-list"></div>
-          </div>
-          <div class="coming-list"></div>
-        </div>
-        <div class="more"></div>
-      </div> -->
        </router-link>
     </div>
     <div class="page f-hot" data-hot=".f-hot" data-cid="c_3j5p10oz">
