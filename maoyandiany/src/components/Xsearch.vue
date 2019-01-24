@@ -45,6 +45,7 @@
 <style scoped>
 .topbar-bg {
     -webkit-box-align: center;
+    
     align-items: center;
     height: 44px;
     -webkit-box-pack: justify;
