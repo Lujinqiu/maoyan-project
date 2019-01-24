@@ -54,7 +54,7 @@ const routes = [
     {name:'Mpanel2',path:'/Mpanel2',component:Mpanel2},
     {name:'Movie',path:'/',component:Movie},
     {name:'Detail',path:'/detail',component:Detail},
-    {name:'Xlongdong',path:'/longdong',component:Xlongdong},
+    {name:'Xlongdong',path:'/longdong/:id',component:Xlongdong},
 
    
 

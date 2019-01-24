@@ -48,7 +48,7 @@
 <style type="text/css">
 .list{
     height: 40px;display:flex;background: #fff;
-    position:fixed;width: 100%;z-index: 100;margin-top:42px;
+    position:fixed;width: 100%;z-index: 100;margin-top:96px;
 }
 .list>div{
     flex:1;height: 40px;border-bottom:1px solid #ccc;text-align: center;
