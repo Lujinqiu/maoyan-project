@@ -25,16 +25,28 @@ export default {
 <style scoped>
 
 .navbar {
+<<<<<<< HEAD
+    /* position:fixed;
+    width:100%;
+    height: 50.5px;
+    z-index: 1000; */
+=======
 
     height: 50.5px;
     width: 100%;
+>>>>>>> 5e103b5da802bb2d08a0cf8577fc245a2437c05d
     color: #fff;
     z-index: 100;
     background: #e54847;
     border-bottom: 1px solid #e54847;
     display: -webkit-box;
+<<<<<<< HEAD
+    /* display: -ms-flexbox; */
+    position: relative;
+=======
     display: -ms-flexbox;
     position: fixed;left:0;top:0;
+>>>>>>> 5e103b5da802bb2d08a0cf8577fc245a2437c05d
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 .navbar .nav-wrap-left {
@@ -55,10 +67,10 @@ export default {
     font-weight: 400;
     text-align: center;
     line-height: 50px;
-    margin: 0 52.5px 0 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    /* margin: 0 52.5px 0 0; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
 }
 </style>
 
