@@ -22,6 +22,9 @@ Vue.use(Mint);
 //第一层陆由
 //首页的App
 import App from './App.vue'
+//首页第二层路由
+import Mpanel from './pages/movie/Mpanel'
+import Mpanel2 from './pages/movie/Mpanel2'
 //store引入
 
 // import CityList from './components/CityList.vue';
@@ -47,12 +50,15 @@ const routes = [
             { name: 'Mine', path: 'mine', component: Mine }
         ]
     },
-
+    {name:'Mpanel',path:'/Mpanel',component:Mpanel},
+    {name:'Mpanel2',path:'/Mpanel2',component:Mpanel2},
     {name:'Movie',path:'/',component:Movie},
     {name:'Detail',path:'/detail',component:Detail},
-    {name:'Xlongdong',path:'/longdong',component:Xlongdong}
+    {name:'Xlongdong',path:'/longdong',component:Xlongdong},
 
-    
+   
+
+
 ]
 
 const router = new VueRouter({

@@ -54,7 +54,11 @@
               >
             </div>
         </div> 
+        </div>
+            </div>
+        </div>
     </router-link>
+
 </template> 
 <script type="text/javascript">
 import "../styles/all.css";
