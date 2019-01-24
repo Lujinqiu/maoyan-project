@@ -1,6 +1,7 @@
 <template>
-    <router-link to="/longdong/" tag="div" class="list-wrap" id="place" style="margin-top:0px;min-height:627px;margin-bottom: 55px;">
-        <div v-for="(it,idx) in movieList" class="item mb-line-b" :data-id="it.id" data-bid="dp_wx_home_cinema_list" style="margin-bottom:20px;">
+    <router-link to="/longdong" tag="div" class="list-wrap" id="place" style="margin-top:0px;min-height:627px;margin-bottom: 55px;">
+        <div v-for="(it,idx) in movieList" class="item mb-line-b" :key="idx"
+         :data-id="it.id" data-bid="dp_wx_home_cinema_list" style="margin-bottom:20px;">
             <div class="title-block box-flex middle">
                 <div class="title line-ellipsis">
                     <span>{{it.nm}}</span>
@@ -35,7 +36,11 @@
         </div>
             </div>
         </div> 
+        </div>
+            </div>
+        </div>
     </router-link>
+
 </template> 
 <script type="text/javascript">
     import '../styles/all.css'
@@ -64,7 +69,7 @@
 </script> 
 
 <style scoped>
-#place{padding-top: 45px;}
+#place{padding-top: 150px;}
 body,html{width: 100%;height: 100%;background: #fff;}
  .list-wrap{
     padding: 13px 15px 13px 0;

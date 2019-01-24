@@ -113,9 +113,9 @@ export default {
 };
 </script>
 <style scoped>
-/* .list-wrap{
+.list-wrap{
   padding-top: 100px
-} */
+}
 .most-expected {
   padding: 12px 0 12px 15px;
   background-color: #fff;

@@ -10,11 +10,11 @@
         <a href="javascript:void(0)" @click="componentName = 'demo2'">组件2</a> -->
        
       <!-- <component :is="currentView"></component> -->
-      <div  class="hot-item active" data-tab=".n-hot">正在热映</div>
-      <div  class="hot-item " data-tab=".f-hot">即将上映</div>
+      <router-link to="/Mpanel" class="hot-item active" data-tab=".n-hot">正在热映</router-link>
+      <router-link to="/Mpanel2" data-tab=".f-hot">即将上映</router-link>
       
     </div>
-    <div class="search-entry search-icon" data-type="movie"></div>
+    <div @click="serch" class="search-entry search-icon" data-type="movie"></div>
     
   </div>
  
@@ -24,26 +24,25 @@
  
     export default {
         data() {
-        
-			
-		
             return {
-                // isShow: false,
-            //     list:[
-            //         {name:'正在热播'},
-            //         {name:'即将上映'}
-            //     ],
-            //     active:'正在热播'
-                
+               query: ''    
             };
         },
         methods: {
-          
+          serch: function () {
+        this.$router.push({path: '/detail'})
+      }
         } 
     }
 </script>
 <style scoped>
 .topbar-bg {
+    /* position:fixed; */
+    /* margin-top:50.5px; */
+    z-index: 100;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
     -webkit-box-align: center;
     
     align-items: center;

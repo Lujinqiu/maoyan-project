@@ -4,9 +4,6 @@
         <Xsearch></Xsearch>
         <Xpanel></Xpanel>
         <!-- <component  v-bind:is = "currentView"> </component> -->
-
-        <Xpanel2></Xpanel2>
-
         <Xfooter></Xfooter>
     </div>
 </template>
@@ -15,7 +12,7 @@
     import Xsearch from '../components/Xsearch.vue';
     import Xfooter from '../components/Xfooter.vue';
     import Xpanel from '../components/Xpanel.vue';
-    import Xpanel2 from '../components/Xpanel2.vue';
+   
     export default {
         data(){
            return{ 
@@ -26,8 +23,8 @@
             Xheader,
             Xsearch,
             Xfooter,
-            Xpanel,
-            Xpanel2
+            Xpanel
+        
         }
         
     }
