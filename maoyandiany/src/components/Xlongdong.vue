@@ -4,3 +4,11 @@
     </div>
     
 </template>
+<script type="text/javascript">
+    export default {
+       created(){
+            console.log(this.$route.params.id)
+       }
+    }
+    
+</script>

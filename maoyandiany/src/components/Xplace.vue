@@ -1,6 +1,6 @@
 <template>
-    <router-link to="/longdong" tag="div" class="list-wrap" id="place" style="margin-top:0px;min-height:627px;margin-bottom: 55px;">
-        <div v-for="(it,idx) in movieList" class="item mb-line-b" :data-id="it.id" data-bid="dp_wx_home_cinema_list" style="margin-bottom:20px;">
+    <div class="list-wrap" id="place" style="margin-top:0px;min-height:627px;margin-bottom: 55px;">
+        <router-link   tag="div" :to="`/longdong/${idx}`" class="item mb-line-b" v-for="(it,idx) in movieList" :data-id="it.id" data-bid="dp_wx_home_cinema_list" style="margin-bottom:20px;">
             <div class="title-block box-flex middle">
                 <div class="title line-ellipsis">
                     <span>{{it.nm}}</span>
@@ -34,8 +34,8 @@
                 </div>
         </div>
             </div>
-        </div> 
-    </router-link>
+        </router-link> 
+    </div>
 </template> 
 <script type="text/javascript">
     import '../styles/all.css'
@@ -53,13 +53,15 @@
                 xhr.onload = ()=>{
                     if(xhr.status===200){
                         let res = JSON.parse(xhr.responseText);
-                        console.log(res)
+                        // console.log(res)
                         res=res.cinemas
                         this.movieList=res
                     }
                 }
             xhr.open('get','http://localhost:4008/movie/ajax/cinemaList?day=2019-01-22&offset=0&limit=20&districtId=-1&lineId=-1&hallType=-1&brandId=-1&serviceId=-1&areaId=-1&stationId=-1&item=&updateShowDay=true&reqId=1548155918452&cityId=20',true);
             xhr.send();
+
+            
         }
     }
 
