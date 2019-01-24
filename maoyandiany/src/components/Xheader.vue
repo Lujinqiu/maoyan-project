@@ -23,14 +23,18 @@ export default {
 };
 </script>
 <style scoped>
+
 .navbar {
+
     height: 50.5px;
+    width: 100%;
     color: #fff;
+    z-index: 100;
     background: #e54847;
     border-bottom: 1px solid #e54847;
     display: -webkit-box;
     display: -ms-flexbox;
-    position: relative;
+    position: fixed;left:0;top:0;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 .navbar .nav-wrap-left {

@@ -114,6 +114,9 @@ export default {
 };
 </script>
 <style scoped>
+.tab-block{
+  padding-top:95px;
+}
 .tab-content .list-wrap {
     background-color: #f5f5f5;
 }

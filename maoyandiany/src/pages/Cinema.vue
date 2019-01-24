@@ -1,7 +1,10 @@
 <template>
     <div>
-        <Xheader></Xheader>
-        <Xsearchccity></Xsearchccity>
+        
+            <Xheader></Xheader>
+            <Xsearchccity></Xsearchccity>
+       
+        
         <Xplace></Xplace>
     </div>
 </template>
@@ -22,6 +25,5 @@
 
 
 </script>
-<style type="text/css">
-    
+<style scoped>
 </style>
