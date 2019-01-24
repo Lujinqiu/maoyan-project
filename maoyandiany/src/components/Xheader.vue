@@ -24,12 +24,15 @@ export default {
 </script>
 <style scoped>
 .navbar {
+    /* position:fixed;
+    width:100%;
     height: 50.5px;
+    z-index: 1000; */
     color: #fff;
     background: #e54847;
     border-bottom: 1px solid #e54847;
     display: -webkit-box;
-    display: -ms-flexbox;
+    /* display: -ms-flexbox; */
     position: relative;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -51,10 +54,10 @@ export default {
     font-weight: 400;
     text-align: center;
     line-height: 50px;
-    margin: 0 52.5px 0 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    /* margin: 0 52.5px 0 0; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
 }
 </style>
 

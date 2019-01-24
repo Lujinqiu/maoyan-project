@@ -3,19 +3,15 @@
         <Xheader></Xheader>
         <Xsearch></Xsearch>
         <Xpanel></Xpanel>
-        <!-- <component  v-bind:is = "currentView"> </component> -->
-
-        <Xpanel2></Xpanel2>
-
         <Xfooter></Xfooter>
     </div>
 </template>
 <script type="text/javascript"> 
-    import Xheader from '../components/Xheader.vue';
-    import Xsearch from '../components/Xsearch.vue';
-    import Xfooter from '../components/Xfooter.vue';
-    import Xpanel from '../components/Xpanel.vue';
-    import Xpanel2 from '../components/Xpanel2.vue';
+    import Xheader from '../../components/Xheader.vue';
+    import Xsearch from '../../components/Xsearch.vue';
+    import Xfooter from '../../components/Xfooter.vue';
+    import Xpanel from '../../components/Xpanel.vue';
+
     export default {
         data(){
            return{ 
@@ -26,11 +22,8 @@
             Xheader,
             Xsearch,
             Xfooter,
-            Xpanel,
-            Xpanel2
+            Xpanel
         }
         
     }
 </script>
-
-

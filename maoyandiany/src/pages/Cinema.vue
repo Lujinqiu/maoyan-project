@@ -1,6 +1,7 @@
 <template>
     <div>
         <Xheader></Xheader>
+        
         <Xsearchccity></Xsearchccity>
         <Xplace></Xplace>
     </div>

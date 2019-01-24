@@ -78,7 +78,6 @@
 .nav-header {
     display: block;
     -webkit-box-flex: 1;
-    -ms-flex: 1;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
