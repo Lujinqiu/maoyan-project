@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <img :src="pic"/>
+            <router-link tag="img" :src="pic" to="/"/>
             <h2>猫眼电影</h2>
         </header>
     </div>

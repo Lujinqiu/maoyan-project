@@ -8,7 +8,6 @@
     export default {
        created(){
             console.log(this.$route.params.id)
-
             //请求数据
             let xhr = new XMLHttpRequest();
                 xhr.onload = ()=>{
